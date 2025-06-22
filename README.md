@@ -10,7 +10,7 @@ Welcome to the **MUSIC Token** project, a vibrant, entertainment-driven initiati
 
 ## 📍 About the Project
 
-> MUSIC tokens pay you to listen to music. Pay MUSIC to pormote music, paying others to listen. 
+> MUSIC tokens pay you to listen to music. Pay MUSIC to promote music, paying others to listen. 
 
 The cXc.world project is a **global music map** on WAX and ow Sui, designed to spotlight the best local talent from every corner of the world. 🌐 Here’s the vibe:
 
@@ -30,7 +30,7 @@ The **MUSIC token** is the heart of the cXc.world experience, an **entertainment
 - **Token Symbol**: MUSIC 🎵
 - **Network**: SUI Blockchain ⚡️
 - **Token Address**: [0x839e59fae416e39f9b6e839a4f6cfeb6794f1e79b5c2f64e123c7cfdd344960a::music::MUSIC](https://suiscan.xyz/mainnet/coin/0x839e59fae416e39f9b6e839a4f6cfeb6794f1e79b5c2f64e123c7cfdd344960a::music::MUSIC/txs) 🔗
-- **Purpose**: MUSIC tokens pay you to listen to music. Pay MUSIC to pormote music, paying others to listen. 
+- **Purpose**: MUSIC tokens pay you to listen to music. Pay MUSIC to promote music, paying others to listen. 
 
 ---
 
