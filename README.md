@@ -2,6 +2,8 @@
 
 # 🎵 MUSIC Token by cXc.world 🌍
 
+Visit the [$MUSIC token](https://suivision.xyz/coin/0x839e59fae416e39f9b6e839a4f6cfeb6794f1e79b5c2f64e123c7cfdd344960a::music::MUSIC)
+
 Welcome to the **MUSIC Token** project, a vibrant, entertainment-driven initiative by [cXc.world](https://cxc.world/)! Our mission is to amplify local music scenes on a global stage using a blockchain-powered music map. The MUSIC token fuels this fun, community-driven experience, letting listeners champion their local artists purely for the love of music. 🚀
 
 > **Disclaimer**: MUSIC is an entertainment token, not an investment or utility token. It’s all about celebrating music and creativity! 🎉
