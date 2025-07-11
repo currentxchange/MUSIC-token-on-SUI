@@ -76,6 +76,18 @@ class AirdropTool {
             const tx = new Transaction();
             const walletAddress = this.keypair.getPublicKey().toSuiAddress();
             
+            // Check if recipient already has a balance of this token
+            const recipientBalance = await this.client.getBalance({
+                owner: recipient,
+                coinType: config.tokenType,
+            });
+            
+            if (parseInt(recipientBalance.totalBalance) > 0) {
+                const balanceInDecimal = (parseInt(recipientBalance.totalBalance) / Math.pow(10, config.tokenDecimals)).toFixed(config.tokenDecimals).replace(/\.?0+$/, '');
+                const tokenName = config.tokenType.split('::').pop();
+                throw new Error(`Recipient ${recipient} already has ${balanceInDecimal} ${tokenName} balance`);
+            }
+            
             // For custom tokens (like MUSIC), we need to find and use existing coins
             const coins = await this.client.getCoins({
                 owner: walletAddress,
