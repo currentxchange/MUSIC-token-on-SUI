@@ -27,7 +27,10 @@ Simple tool to send SUI tokens to addresses in CSV files.
    PRIVATE_KEY=your_private_key_here
    
    # Token type to send
-   TOKEN_TYPE=0x2::sui::SUI
+   TOKEN_TYPE=0x839e59fae416e39f9b6e839a4f6cfeb6794f1e79b5c2f64e123c7cfdd344960a::music::MUSIC
+   
+   # Token decimals
+   TOKEN_DECIMALS=6
    
    # Network
    NETWORK=testnet
@@ -53,7 +56,7 @@ Your CSV files should have this format:
 ```
 
 - First column: Sui address
-- Second column: Amount in MIST (1 SUI = 1,000,000,000 MIST)
+- Second column: Amount in decimal format (e.g., 0.5 for half a token)
 
 ## Usage
 
@@ -95,7 +98,8 @@ Format:
 | Variable | Default | Description |
 |----------|---------|-------------|
 | `PRIVATE_KEY` | - | Your private key (base64 encoded) |
-| `TOKEN_TYPE` | `'0x2::sui::SUI'` | Token type to send |
+| `TOKEN_TYPE` | `'0x839e59fae416e39f9b6e839a4f6cfeb6794f1e79b5c2f64e123c7cfdd344960a::music::MUSIC'` | Token type to send |
+| `TOKEN_DECIMALS` | `6` | Number of decimal places for the token |
 | `NETWORK` | `'testnet'` | Network to use: 'testnet', 'devnet', 'mainnet' |
 | `BATCH_SIZE` | `10` | Number of transactions per batch |
 | `DELAY_BETWEEN_BATCHES` | `2000` | Delay between batches in milliseconds |
@@ -118,15 +122,15 @@ Output:
 
 🚀 Starting airdrop on testnet network
 🔑 Sender address: 0x1234567890abcdef...
-🪙 Token type: 0x2::sui::SUI
-💰 Wallet balance: 1000000000 SUI
+🪙 Token type: 0x839e59fae416e39f9b6e839a4f6cfeb6794f1e79b5c2f64e123c7cfdd344960a::music::MUSIC
+💰 Wallet balance: 1.0 MUSIC
 📁 Found 1 CSV files to process
 
 📄 Processing file: lofi.csv
    Found 195 unprocessed addresses
 
    Processing batch 1/20
-✅ Sent 0.234 SUI to 0x206a81cb1c41a86a382ecfe13dafabeee8d3b869c9b710306875c56650b008d6
+✅ Sent 0.234 MUSIC to 0x206a81cb1c41a86a382ecfe13dafabeee8d3b869c9b710306875c56650b008d6
    Transaction: 0xabc123...
 📝 Saved processed addresses to lofi-dropped.csv
    Waiting 2000ms before next batch...
@@ -136,9 +140,8 @@ Output:
 
 ## Notes
 
-- The tool uses MIST (the smallest unit of SUI) for amounts
-- 1 SUI = 1,000,000,000 MIST
+- The tool automatically converts decimal amounts to the token's smallest unit
+- Token decimals are configurable via `TOKEN_DECIMALS` environment variable
 - Make sure you have enough tokens in your wallet for the airdrop
-- For SUI tokens, the tool automatically handles gas fees by splitting coins from the gas object
 - For custom tokens, make sure you have enough SUI for gas fees
 - The tool supports any token type that follows the Sui coin standard
