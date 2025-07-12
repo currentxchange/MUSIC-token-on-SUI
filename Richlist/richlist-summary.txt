@@ -1,0 +1,12 @@
+
+SUI Richlist Summary
+===================
+Generated: 2025-07-12T22:39:39.834Z
+Total Addresses: 0
+Total SUI: 0
+Average SUI per address: NaN
+
+Top 10 Addresses:
+
+
+Output file: /Users/fresh/Dropbox/htdocs/MUSIC-token-on-SUI/Richlist/sui-richlist.csv

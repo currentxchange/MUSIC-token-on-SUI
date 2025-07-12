@@ -1,0 +1,21 @@
+{
+  "name": "sui-richlist-generator",
+  "version": "1.0.0",
+  "description": "Generate richlist CSV of top SUI addresses using Blockberry API",
+  "main": "generate-richlist.js",
+  "type": "module",
+  "scripts": {
+    "start": "node generate-richlist.js",
+    "generate": "node generate-richlist.js",
+    "setup": "node setup.js",
+    "test": "node test-api.js",
+    "info": "node show-info.js"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2",
+    "dotenv": "^16.3.1"
+  },
+  "keywords": ["sui", "richlist", "blockchain", "api"],
+  "author": "",
+  "license": "MIT"
+} 
