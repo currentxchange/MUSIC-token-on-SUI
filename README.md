@@ -6,16 +6,19 @@
 
 Visit the [$MUSIC token](https://suivision.xyz/coin/0x839e59fae416e39f9b6e839a4f6cfeb6794f1e79b5c2f64e123c7cfdd344960a::music::MUSIC) on SuiVision
 
-### 📈 MUSIC Token Market Links
+# Airdrop Info
+
+✅ Eligible: 192300 Accounts
+🔢 Total Airdrop: 96,985.879715 MUSIC
+
+More info in the [Music Airdrop Announcement article](https://medium.com/@cxc-world/cxc-worlds-music-token-airdrop-hits-180-000-wallets-on-sui-c7a36c8a7e19)
+
+### 📈 Scanner Links
 
 | **Platform** | **Link** |
 |--------------|----------|
 | **🔍 SuiScan** | [View on SuiScan](https://suiscan.xyz/mainnet/coin/0x839e59fae416e39f9b6e839a4f6cfeb6794f1e79b5c2f64e123c7cfdd344960a::music::MUSIC) |
 | **📊 CoinMarketCap** | [View on CoinMarketCap](https://dex.coinmarketcap.com/token/sui%20network/0x839e59fae416e39f9b6e839a4f6cfeb6794f1e79b5c2f64e123c7cfdd344960a::music::MUSIC/) |
-| **🦎 GeckoTerminal** | [View on GeckoTerminal](https://www.geckoterminal.com/sui-network/tokens/0x839e59fae416e39f9b6e839a4f6cfeb6794f1e79b5c2f64e123c7cfdd344960a::music::MUSIC) |
-| **🦅 Birdeye** | [View on Birdeye](https://birdeye.so/token/0x839e59fae416e39f9b6e839a4f6cfeb6794f1e79b5c2f64e123c7cfdd344960a::music::MUSIC?chain=sui) |
-| **⚡ RaidenX** | [View on RaidenX](https://raidenx.io/sui/token/0x839e59fae416e39f9b6e839a4f6cfeb6794f1e79b5c2f64e123c7cfdd344960a::music::MUSIC) |
-| **🍜 Noodles.fi** | [View on Noodles.fi](https://noodles.fi/coins/0x839e59fae416e39f9b6e839a4f6cfeb6794f1e79b5c2f64e123c7cfdd344960a::music::MUSIC) |
 
 ---
 
@@ -127,12 +130,10 @@ Stake [🟣 PURPLE](https://wax.alcor.exchange/swap?output=PURPLE-purplepurple&i
 
 ## 🔗 Quick Links
 
-### 🔍 Token Explorer Links
+### 🔍 Token Market Links
 
 | **Platform** | **Link** |
 |--------------|----------|
-| **🔍 SuiScan** | [View on SuiScan](https://suiscan.xyz/mainnet/coin/0x839e59fae416e39f9b6e839a4f6cfeb6794f1e79b5c2f64e123c7cfdd344960a::music::MUSIC) |
-| **📊 CoinMarketCap** | [View on CoinMarketCap](https://dex.coinmarketcap.com/token/sui%20network/0x839e59fae416e39f9b6e839a4f6cfeb6794f1e79b5c2f64e123c7cfdd344960a::music::MUSIC/) |
 | **🦎 GeckoTerminal** | [View on GeckoTerminal](https://www.geckoterminal.com/sui-network/tokens/0x839e59fae416e39f9b6e839a4f6cfeb6794f1e79b5c2f64e123c7cfdd344960a::music::MUSIC) |
 | **🦅 Birdeye** | [View on Birdeye](https://birdeye.so/token/0x839e59fae416e39f9b6e839a4f6cfeb6794f1e79b5c2f64e123c7cfdd344960a::music::MUSIC?chain=sui) |
 | **⚡ RaidenX** | [View on RaidenX](https://raidenx.io/sui/token/0x839e59fae416e39f9b6e839a4f6cfeb6794f1e79b5c2f64e123c7cfdd344960a::music::MUSIC) |
@@ -155,6 +156,6 @@ Stake [🟣 PURPLE](https://wax.alcor.exchange/swap?output=PURPLE-purplepurple&i
 
 **🤘 Find community in our [Telegram Chat](https://t.me/cXc_world)**
 
-Made with ❤️ by the cXc.world team
+Made with ❤️ by the cXc.world team. MUSIC listen to earn expected q4
 
 </div>
