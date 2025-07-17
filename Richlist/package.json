@@ -9,7 +9,8 @@
     "generate": "node generate-richlist.js",
     "setup": "node setup.js",
     "test": "node test-api.js",
-    "info": "node show-info.js"
+    "info": "node show-info.js",
+    "status": "node check-status.js"
   },
   "dependencies": {
     "node-fetch": "^3.3.2",

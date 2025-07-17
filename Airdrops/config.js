@@ -13,7 +13,7 @@ export const config = {
     network: process.env.NETWORK || 'testnet', // 'testnet', 'devnet', 'mainnet'
     
     // Token configuration
-    tokenType: process.env.TOKEN_TYPE || '0x839e59fae416e39f9b6e839a4f6cfeb6794f1e79b5c2f64e123c7cfdd344960a::music::MUSIC', // Token type to send
+    tokenType: process.env.TOKEN_TYPE,
     tokenDecimals: parseInt(process.env.TOKEN_DECIMALS) || 6, // Number of decimal places for the token
     
     // Batch processing settings

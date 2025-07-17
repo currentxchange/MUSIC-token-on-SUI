@@ -28,10 +28,53 @@ class RichlistGenerator {
     this.currentPage = 0;
     this.totalFetched = 0;
     this.outputFile = path.join(__dirname, 'sui-richlist.csv');
+    this.resumeFromPage = 0;
   }
 
   async delay(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
+  }
+
+  // Check if we can resume from existing file
+  async checkResumeStatus() {
+    if (!fs.existsSync(this.outputFile)) {
+      console.log('📁 No existing CSV file found. Starting fresh...');
+      return false;
+    }
+
+    const stats = fs.statSync(this.outputFile);
+    if (stats.size === 0) {
+      console.log('📁 Existing CSV file is empty. Starting fresh...');
+      return false;
+    }
+
+    try {
+      const content = fs.readFileSync(this.outputFile, 'utf8');
+      const lines = content.trim().split('\n').filter(line => line.trim());
+      
+      if (lines.length === 0) {
+        console.log('📁 Existing CSV file has no valid lines. Starting fresh...');
+        return false;
+      }
+
+      // Calculate how many pages we've already processed
+      this.totalFetched = lines.length;
+      this.resumeFromPage = Math.floor(this.totalFetched / PAGE_SIZE);
+      
+      console.log(`📁 Found existing CSV file with ${this.totalFetched.toLocaleString()} addresses`);
+      console.log(`🔄 Resuming from page ${this.resumeFromPage} (${this.totalFetched.toLocaleString()} addresses already fetched)`);
+      
+      // Load existing addresses into memory for summary generation
+      this.addresses = lines.map(line => {
+        const [address, amount] = line.split(', ');
+        return { address: address.trim(), amount: amount.trim() };
+      });
+
+      return true;
+    } catch (error) {
+      console.log('❌ Error reading existing CSV file. Starting fresh...');
+      return false;
+    }
   }
 
   async fetchHolders(page, size = PAGE_SIZE) {
@@ -88,8 +131,19 @@ class RichlistGenerator {
       process.exit(1);
     }
 
-    // Create/clear output file
-    fs.writeFileSync(this.outputFile, '');
+    // Check if we can resume from existing file
+    const canResume = await this.checkResumeStatus();
+    
+    if (!canResume) {
+      // Create/clear output file for fresh start
+      fs.writeFileSync(this.outputFile, '');
+      this.currentPage = 0;
+      this.totalFetched = 0;
+      this.addresses = [];
+    } else {
+      // Set current page to resume from
+      this.currentPage = this.resumeFromPage;
+    }
 
     while (this.totalFetched < MAX_ADDRESSES) {
       try {
