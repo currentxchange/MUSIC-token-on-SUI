@@ -6,7 +6,7 @@
 
 Visit the [$MUSIC token](https://suivision.xyz/coin/0x839e59fae416e39f9b6e839a4f6cfeb6794f1e79b5c2f64e123c7cfdd344960a::music::MUSIC) on SuiVision
 
-### 🔍 Token Explorer Links
+### 📈 MUSIC Token Market Links
 
 | **Platform** | **Link** |
 |--------------|----------|
